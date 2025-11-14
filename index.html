@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Network - Protect Earth</title>
+    <title>Serene Living - Discover Life's Beauty</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
         }
 
         :root {
-            --primary: #2e7d32;
-            --secondary: #4caf50;
-            --accent: #8bc34a;
-            --light: #e8f5e9;
-            --dark: #1b5e20;
-            --text: #333333;
+            --primary: #8B7355;
+            --secondary: #A8957A;
+            --accent: #D4B996;
+            --light: #F9F7F4;
+            --dark: #4A4A4A;
+            --text: #666666;
             --white: #ffffff;
+            --warm: #F5F2ED;
         }
 
         body {
@@ -30,13 +31,14 @@
         }
 
         header {
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            color: var(--white);
-            padding: 1rem 0;
+            background: var(--white);
+            color: var(--dark);
+            padding: 1.5rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .container {
@@ -55,8 +57,9 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            font-size: 1.8rem;
-            font-weight: 700;
+            font-size: 1.6rem;
+            font-weight: 300;
+            letter-spacing: 2px;
         }
 
         .logo i {
@@ -73,12 +76,14 @@
         }
 
         nav ul li a {
-            color: var(--white);
+            color: var(--dark);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 300;
             transition: all 0.3s ease;
             padding: 0.5rem 0;
             position: relative;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
         }
 
         nav ul li a:hover {
@@ -101,14 +106,15 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
-            height: 80vh;
+            height: 70vh;
             display: flex;
             align-items: center;
             text-align: center;
             color: var(--white);
+            position: relative;
         }
 
         .hero-content {
@@ -117,34 +123,41 @@
         }
 
         .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            font-weight: 300;
+            letter-spacing: 3px;
+            line-height: 1.4;
         }
 
         .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            opacity: 0.9;
         }
 
         .btn {
             display: inline-block;
-            background-color: var(--accent);
+            background-color: transparent;
             color: var(--white);
-            padding: 0.8rem 2rem;
-            border-radius: 50px;
+            padding: 0.8rem 2.5rem;
+            border-radius: 0;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 300;
             transition: all 0.3s ease;
-            border: none;
+            border: 1px solid var(--white);
             cursor: pointer;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            letter-spacing: 2px;
+            font-size: 0.9rem;
         }
 
         .btn:hover {
-            background-color: var(--primary);
-            transform: translateY(-3px);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+            background-color: var(--white);
+            color: var(--dark);
+            transform: translateY(-2px);
         }
 
         section {
@@ -499,9 +512,9 @@
     <header>
         <div class="container nav-container">
             <div class="logo">
-                <i class="fas fa-seedling"></i>
-                <span>Green Network</span>
-            </div>
+                    <i class="fas fa-leaf"></i>
+                    <span>Serene Living</span>
+                </div>
             <nav>
                 <div class="mobile-menu">
                     <i class="fas fa-bars"></i>
@@ -509,8 +522,8 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#initiatives">Initiatives</a></li>
-                    <li><a href="#get-involved">Get Involved</a></li>
+                    <li><a href="#initiatives">Lifestyle</a></li>
+                    <li><a href="#get-involved">Join Us</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -520,9 +533,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h1>Protect Our Planet, Preserve Our Future</h1>
-            <p>Join the global movement to create a sustainable world through conservation, education, and community action.</p>
-            <a href="#get-involved" class="btn">Join Our Network</a>
+            <h1>Slow Down, Discover Life's Beauty</h1>
+                <p>In our fast-paced world, find inner peace and life's warmth, making every day poetic and beautiful</p>
+                <a href="#about" class="btn">Start Exploring</a>
         </div>
     </section>
 
@@ -530,41 +543,41 @@
     <section id="about">
         <div class="container">
             <div class="section-title">
-                <h2>About Green Network</h2>
-                <p>We are a global community dedicated to environmental protection and sustainable development.</p>
+                <h2>About Serene Living</h2>
+                <p>We believe life's beauty lies in the details, cherishing each moment in unhurried time</p>
             </div>
             <div class="about-content">
                 <div class="about-img">
                     <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Team planting trees">
                 </div>
                 <div class="about-text">
-                    <h3>Our Mission</h3>
-                    <p>Green Network is committed to creating a sustainable future by protecting natural ecosystems, promoting renewable energy, and empowering communities to take environmental action.</p>
-                    <p>Founded in 2010, we've grown from a small grassroots organization to an international network with over 50,000 members across 120 countries.</p>
-                    <p>Our approach combines scientific research, community engagement, and policy advocacy to address the most pressing environmental challenges of our time.</p>
-                    <a href="#" class="btn">Learn More</a>
+                    <h3>Our Philosophy</h3>
+                    <p>In our fast-paced modern life, serene living is a return to authenticity. It encourages us to slow down, feel every detail of life with heart, find joy in simplicity, and discover beauty in the ordinary. We believe true happiness comes from inner peace and love for life.</p>
+                    <p>从一杯手冲咖啡的香气，到一本好书的陪伴；从一次深入的对话，到一场说走就走的旅行。生活中的每一个瞬间，都值得我们用心去感受。</p>
+                    <p>我们相信，真正的品质生活不在于拥有多少，而在于体验多深。让我们一起，在慢时光中发现生活的美好。</p>
+                    <a href="#" class="btn">了解更多</a>
                 </div>
             </div>
             <div class="stats">
                 <div class="stat-item">
-                    <i class="fas fa-tree"></i>
-                    <h3 class="counter" data-target="2500000">0</h3>
-                    <p>Trees Planted</p>
+                    <i class="fas fa-heart"></i>
+                    <h3 class="counter" data-target="1280">0</h3>
+                    <p>Life Shares</p>
                 </div>
                 <div class="stat-item">
                     <i class="fas fa-users"></i>
-                    <h3 class="counter" data-target="50000">0</h3>
-                    <p>Active Members</p>
+                    <h3 class="counter" data-target="5200">0</h3>
+                    <p>Community Members</p>
                 </div>
                 <div class="stat-item">
-                    <i class="fas fa-globe-americas"></i>
+                    <i class="fas fa-mug-hot"></i>
+                    <h3 class="counter" data-target="365">0</h3>
+                    <p>Daily Companions</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-book"></i>
                     <h3 class="counter" data-target="120">0</h3>
-                    <p>Countries Reached</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-recycle"></i>
-                    <h3 class="counter" data-target="1500">0</h3>
-                    <p>Cleanup Projects</p>
+                    <p>Curated Articles</p>
                 </div>
             </div>
         </div>
@@ -574,37 +587,37 @@
     <section class="initiatives" id="initiatives">
         <div class="container">
             <div class="section-title">
-                <h2>Our Initiatives</h2>
-                <p>Discover the key programs and projects we're implementing to protect our planet.</p>
+                <h2>Lifestyle Aesthetics</h2>
+                <p>Explore the small things that make life more beautiful, discovering extraordinary beauty in everyday life.</p>
             </div>
             <div class="initiatives-grid">
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://dialogue.earth/content/uploads/2021/04/lessons-from-the-rush-to-reforest-china-dialogue-2400x1599.jpg" alt="Reforestation">
+                        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Coffee Moments">
                     </div>
                     <div class="initiative-content">
-                        <h3>Global Reforestation</h3>
-                        <p>Planting millions of trees worldwide to restore ecosystems, combat climate change, and protect biodiversity.</p>
+                        <h3>Slow Coffee Moments</h3>
+                        <p>In our busy lives, take time to brew a cup of coffee. Let the aroma fill the air, let thoughts settle, and enjoy this moment of tranquility.</p>
                         <a href="#" class="btn">Learn More</a>
                     </div>
                 </div>
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Ocean Conservation">
+                        <img src="https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2050&q=80" alt="Reading Time">
                     </div>
                     <div class="initiative-content">
-                        <h3>Ocean Conservation</h3>
-                        <p>Protecting marine ecosystems, reducing plastic pollution, and promoting sustainable fishing practices.</p>
+                        <h3>Mindful Reading</h3>
+                        <p>Open a book and let words transport us to another world. In the sound of turning pages, find inner peace and fulfillment.</p>
                         <a href="#" class="btn">Learn More</a>
                     </div>
                 </div>
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="Renewable Energy">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Nature Walks">
                     </div>
                     <div class="initiative-content">
-                        <h3>Renewable Energy</h3>
-                        <p>Promoting solar, wind, and other clean energy sources to reduce dependence on fossil fuels.</p>
+                        <h3>Nature Walks</h3>
+                        <p>In the hustle and bustle of the city, find a patch of green. Slow your pace, feel the warmth of sunlight, listen to the wind, and reconnect with nature.</p>
                         <a href="#" class="btn">Learn More</a>
                     </div>
                 </div>
@@ -615,9 +628,20 @@
     <!-- CTA Section -->
     <section class="cta" id="get-involved">
         <div class="container">
-            <h2>Join Our Global Movement</h2>
-            <p>Together, we can create a sustainable future for generations to come. Every action counts, no matter how small.</p>
-            <a href="#" class="btn">Become a Member</a>
+            <div class="section-title">
+                <h2>Join Our Community</h2>
+                <p>Find your own rhythm in serene living together with like-minded friends.</p>
+            </div>
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h3>Ready to Slow Down?</h3>
+                    <p>Whether you want to share beautiful moments of life or seek inner peace, we welcome your joining. Let's create our own serene moments in this fast-paced world together.</p>
+                    <a href="#" class="btn">Join Now</a>
+                </div>
+                <div class="cta-image">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80" alt="Serene Living Moments">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -626,44 +650,43 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Green Network</h3>
-                    <p>We are dedicated to protecting our planet through collaborative action, education, and sustainable solutions.</p>
+                    <h3>Serene Living</h3>
+                    <p>In our fast-paced world, find inner peace and life's warmth, making every day poetic and beautiful.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-heart"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#initiatives">Initiatives</a></li>
-                        <li><a href="#get-involved">Get Involved</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#initiatives">Lifestyle</a></li>
+                        <li><a href="#get-involved">Join Us</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Our Programs</h3>
+                    <h3>Featured Content</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Reforestation</a></li>
-                        <li><a href="#">Ocean Cleanup</a></li>
-                        <li><a href="#">Wildlife Protection</a></li>
-                        <li><a href="#">Climate Education</a></li>
-                        <li><a href="#">Sustainable Agriculture</a></li>
+                        <li><a href="#">Serene Living Guide</a></li>
+                        <li><a href="#">Life Reflections</a></li>
+                        <li><a href="#">Beautiful Sharing</a></li>
+                        <li><a href="#">Daily Mood</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Copper Creek Drive, New York</p>
-                    <p><i class="fas fa-phone"></i> +1 (312) 171-0771</p>
-                    <p><i class="fas fa-envelope"></i> support@greennetwork.org</p>
+                    <p><i class="fas fa-envelope"></i> hello@sereneliving.com</p>
+                    <p><i class="fas fa-heart"></i> Feel the warmth of life with heart</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Every beautiful present moment</p>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Green Network. All rights reserved.</p>
+                <p>&copy; 2024 Serene Living. Feel with heart, share with love.</p>
             </div>
         </div>
     </footer>
